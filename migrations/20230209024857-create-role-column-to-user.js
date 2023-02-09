@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   up (queryInterface, Sequelize) {
-    return queryInterface.addColumn('Users','role', {type: Sequelize.INTEGER})
+    return queryInterface.addColumn('Users','role', {type: Sequelize.STRING})
     /**
      * Add altering commands here.
      *

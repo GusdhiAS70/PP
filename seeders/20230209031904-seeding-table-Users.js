@@ -6,17 +6,20 @@ module.exports = {
     let data = [{
       userName: 'Yupiter1',
       email: 'planet@email.com',
-      password: 'Jupiter21'
+      password: 'Jupiter21',
+      role: 'user'
     },
     {
       userName: 'Avansa2',
       email: 'mobil@email.com',
-      password: 'Avanza12'
+      password: 'Avanza12',
+      role: 'user'
     },
     {
       userName: 'PKX3',
       email: 'motor@email.com',
-      password: 'PCX13'
+      password: 'PCX13',
+      role: 'user'
     }
   ]
   let mapping = data.map(el => {

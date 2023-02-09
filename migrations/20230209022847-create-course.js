@@ -21,6 +21,9 @@ module.exports = {
       duration: {
         type: Sequelize.INTEGER
       },
+      picture: {
+        type: Sequelize.STRING
+      },
       CategoryId: {
         type: Sequelize.INTEGER,
         references:{model:'Categories', key: 'id'}

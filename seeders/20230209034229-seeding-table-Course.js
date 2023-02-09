@@ -7,6 +7,7 @@ module.exports = {
       name: 'Joseph Anderson',
       experience: 20,
       achievement: 'Gold medal Dirt Racing GPX 2010',
+      picture:'https://tinyurl.com/yhn3phv7',
       duration: 60,
       CategoryId: 3,
       UserId : 3
@@ -15,6 +16,7 @@ module.exports = {
       name: 'Gandalf Putih',
       experience: 50,
       achievement: 'Siver medal Michelin Star GP 2015',
+      picture:'https://tinyurl.com/2p92ekcm',
       duration: 90,
       CategoryId: 2,
       UserId : 2
@@ -23,6 +25,7 @@ module.exports = {
       name: 'Bianca Simatupang',
       experience: 5,
       achievement: 'Gold medal Ojek Master Race 2018',
+      picture:'https://tinyurl.com/4vjfv3m8',
       duration: 120,
       CategoryId: 1,
       UserId : 1
