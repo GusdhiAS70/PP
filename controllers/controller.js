@@ -1,4 +1,4 @@
-const {Course} = require('../models/index')
+const {Course, Schedules} = require('../models/index')
 
 class Controller {
     static renderLogin(req, res) {
@@ -28,15 +28,33 @@ class Controller {
     }
 
     static renderFormRegister(req, res) {
+        // Schedules.findAll()
         res.render('formRegister')
     }
 
     static handlerFormRegister(req, res) {
+        let {name, duration, category, email} = req.body
+        // let data = req.body
+        // console.log(data);
+        Schedules.create({
+            name: name,
+            duration: duration,
+            category: category,
+            email: email
+        })
 
+        .then(data => {
+            res.redirect('/course')
+        })
+
+        .catch(err => {
+            // console.log(err, "<<<<")
+            res.send(err)
+        })
     }
 
     static schedule(req, res) {
-
+        res.render('schedule')
     }
 }
 

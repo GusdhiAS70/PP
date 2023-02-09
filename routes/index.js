@@ -6,5 +6,7 @@ const router = express.Router()
 router.get('/course', Controller.course)
 router.get('/course/form', Controller.renderFormRegister)
 router.post('/course/form', Controller.handlerFormRegister)
+router.get('/course/schedule', Controller.schedule)
+
 
 module.exports = router

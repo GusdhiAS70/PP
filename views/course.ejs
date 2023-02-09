@@ -16,16 +16,21 @@
                 <th>Experience</th>
                 <th>Achievement</th>
                 <th>Duration</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
             <% data.forEach(el => { %>
                 <tr>
-                    <img src="<%= el.picture %>">
                     <td><%= el.name %></td>
                     <td><%= el.experience %></td>
                     <td><%= el.achievement %></td>
                     <td><%= el.duration %></td>
+                    <td>
+                        <a href="/course/form">
+                            <button>Book</button>
+                        </a>
+                    </td>
                 </tr>
             <% }) %>
         </tbody>
