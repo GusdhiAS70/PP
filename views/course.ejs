@@ -9,9 +9,10 @@
 <body>
     <h1>COURSE</h1>
 
-    <table>
+    <table border="3">
         <thead>
             <tr>
+                <th> </th>
                 <th>Name</th>
                 <th>Experience</th>
                 <th>Achievement</th>
@@ -21,7 +22,9 @@
         <tbody>
             <% data.forEach(el => { %>
                 <tr>
-                    <img src="<%= el.picture %>">
+                    <td>   
+                        <img style="width: 250px;" src="<%= el.picture %>">
+                    </td>
                     <td><%= el.name %></td>
                     <td><%= el.experience %></td>
                     <td><%= el.achievement %></td>
