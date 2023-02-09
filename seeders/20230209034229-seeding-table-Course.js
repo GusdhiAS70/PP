@@ -5,21 +5,24 @@ module.exports = {
   up (queryInterface, Sequelize) {
     let data = [{
       name: 'Joseph Anderson',
-      description: 'Guru asal amerika yang sudah menyetir selama 20 tahun,  peraih medali emas Dirt Racing GPX 2010 di Belanda',
+      experience: 20,
+      achievement: 'Gold medal Dirt Racing GPX 2010',
       duration: 60,
       CategoryId: 3,
       UserId : 3
     },
     {
       name: 'Gandalf Putih',
-      description: 'Guru asal eropa yang sudah menyetir selama 50,  peraih medali silver Michelin World Tour 2020 di Amerika',
+      experience: 50,
+      achievement: 'Siver medal Michelin Star GP 2015',
       duration: 90,
       CategoryId: 2,
       UserId : 2
     },
     {
       name: 'Bianca Simatupang',
-      description: 'Guru asli Indonesia yang sudah menyetir selama 5 tahun,  peraih medali emas Ojek Master Race 2015 di Indonesia',
+      experience: 5,
+      achievement: 'Gold medal Ojek Master Race 2018',
       duration: 120,
       CategoryId: 1,
       UserId : 1

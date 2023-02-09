@@ -12,7 +12,10 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      description: {
+      experience: {
+        type: Sequelize.INTEGER
+      },
+      achievement:{
         type: Sequelize.STRING
       },
       duration: {
