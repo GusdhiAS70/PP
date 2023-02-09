@@ -1,4 +1,4 @@
-const {Course, Schedules} = require('../models/index')
+const {Course, Schedule} = require('../models/index')
 
 class Controller {
     static renderLogin(req, res) {
@@ -36,7 +36,7 @@ class Controller {
         let {name, duration, category, email} = req.body
         // let data = req.body
         // console.log(data);
-        Schedules.create({
+        Schedule.create({
             name: name,
             duration: duration,
             category: category,
