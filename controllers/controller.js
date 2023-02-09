@@ -2,7 +2,7 @@ const {Course, Schedules} = require('../models/index')
 
 class Controller {
     static renderLogin(req, res) {
-
+        res.render('login')
     }
 
     static renderRegister(req, res) {
