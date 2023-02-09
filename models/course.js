@@ -2,8 +2,6 @@
 const {
   Model
 } = require('sequelize');
-const category = require('./category');
-const user = require('./user');
 module.exports = (sequelize, DataTypes) => {
   class Course extends Model {
     /**
@@ -13,18 +11,18 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Course.belongsTo(user)
-      Course.belongsTo(category)
+      Course.belongsTo(models.User)
+      Course.belongsTo(models.Category)
     }
   }
   Course.init({
     name: DataTypes.STRING,
-    description: DataTypes.STRING,
+    experience: DataTypes.INTEGER,
+    achievement: DataTypes.STRING,
     duration: DataTypes.INTEGER,
-    CategoryId: {type:DataTypes.INTEGER,
-    references:{model :"Categories" , key:'Id'}},
-    UserId: {type:DataTypes.INTEGER,
-    references:{model :"Users" , key:'Id'}}
+    picture: DataTypes.STRING,
+    CategoryId: DataTypes.INTEGER,
+    UserId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Course',

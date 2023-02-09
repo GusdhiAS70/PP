@@ -2,7 +2,6 @@
 const {
   Model
 } = require('sequelize');
-const user = require('./user');
 module.exports = (sequelize, DataTypes) => {
   class Profile extends Model {
     /**
@@ -12,14 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Profile.belongsTo(user)
+      Profile.belongsTo(models.User)
     }
   }
   Profile.init({
     name: DataTypes.STRING,
     gender: DataTypes.STRING,
-    UserId: {references: {model :"Users" , key:'Id'},
-      type:DataTypes.STRING}
+    UserId: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Profile',
